@@ -13,9 +13,9 @@ LiquidCrystal lcd(8, 7, 6, 5, 4, 3);
 byte char_x = 0;
 byte char_y = 0;
 
-char data1[] = "O, He";
-char data2[] = "llo";
-char data3[] = "12345";
+char data1[] = "Oh, G";
+char data2[] = "EE";
+char data3[] = "123...";
  
 void setup() {
   lcd.begin(20, 4);
@@ -762,6 +762,7 @@ void printBigCharacters(char character[], byte x, byte y) {
       lcd.setCursor(x, y + 1);
       lcd.print(character[i]);
       x = x + 1;
+      char_x = char_x + 1;
     }
   }
 }
