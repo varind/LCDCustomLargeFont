@@ -173,9 +173,9 @@ void printBigCharacters(char character[], byte x, byte y) {
       lcd.setCursor(x, y);
       lcd.write(1);
       lcd.write(2);
-      lcd.setCursor(x + 1, y + 1);
-      lcd.write(255);
+      lcd.setCursor(x, y + 1);
       lcd.write(254);
+      lcd.write(255);
     }
 
     if (character[i] == '2')
@@ -214,10 +214,10 @@ void printBigCharacters(char character[], byte x, byte y) {
       lcd.write(3);
       lcd.write(4);
       lcd.write(2);
-      lcd.setCursor(x + 2, y + 1);
+      lcd.setCursor(x, y + 1);
+      lcd.write(254);
+      lcd.write(254);
       lcd.write(255);
-      lcd.write(254);
-      lcd.write(254);
     }
 
     if (character[i] == '5')
@@ -256,9 +256,9 @@ void printBigCharacters(char character[], byte x, byte y) {
       lcd.write(1);
       lcd.write(1);
       lcd.write(2);
-      lcd.setCursor(x + 1, y + 1);
-      lcd.write(8);
+      lcd.setCursor(x, y + 1);
       lcd.write(254);
+      lcd.write(8);
       lcd.write(254);
     }
 
@@ -284,10 +284,10 @@ void printBigCharacters(char character[], byte x, byte y) {
       lcd.write(8);
       lcd.write(6);
       lcd.write(2);
-      lcd.setCursor(x + 2, y + 1);
+      lcd.setCursor(x, y + 1);
+      lcd.write(254);
+      lcd.write(254);
       lcd.write(255);
-      lcd.write(254);
-      lcd.write(254);
     }
 
     if (character[i] == 'A' || character[i] == 'a')
@@ -420,10 +420,10 @@ void printBigCharacters(char character[], byte x, byte y) {
     {
       foundChar = true;
       charWidth = 3;
-      lcd.setCursor(x + 2, y);
+      lcd.setCursor(x, y);
+      lcd.write(254);
+      lcd.write(254);
       lcd.write(255);
-      lcd.write(254);
-      lcd.write(254);
       lcd.setCursor(x, y + 1);
       lcd.write(4);
       lcd.write(4);
@@ -585,10 +585,10 @@ void printBigCharacters(char character[], byte x, byte y) {
       lcd.write(254);
       lcd.write(254);
       lcd.write(5);
-      lcd.setCursor(x + 1, y + 1);
+      lcd.setCursor(x, y + 1);
+      lcd.write(254);
       lcd.write(2);
       lcd.write(8);
-      lcd.write(254);
       lcd.write(254);
     }
 
@@ -630,9 +630,9 @@ void printBigCharacters(char character[], byte x, byte y) {
       lcd.write(3);
       lcd.write(4);
       lcd.write(5);
-      lcd.setCursor(x + 1, y + 1);
-      lcd.write(255);
+      lcd.setCursor(x, y + 1);
       lcd.write(254);
+      lcd.write(255);
       lcd.write(254);
     }
 
